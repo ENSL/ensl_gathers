@@ -11,3 +11,4 @@ public/vendor.js
 public/vendor.js.map
 db/data
 .env
+.idea/
