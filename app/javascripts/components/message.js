@@ -354,7 +354,6 @@ class ChatMessage extends React.Component {
         <span className="chat-img pull-left">
           <img
             src={this.props.message.author.avatar}
-            alt="User Avatar"
             className="chat-avatar" />
         </span>
         <div className="chat-body clearfix">
