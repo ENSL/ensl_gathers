@@ -28,7 +28,7 @@ services:
       - "./public:/app/public"
     init: true
   mongodb:
-    image: "bitnami/mongodb:latest"
+    image: "bitnami/mongodb:4.4"
     container_name: ensl_gather_mongodb
     volumes:
       - "./db/data:/bitnami/mongodb"
@@ -36,3 +36,4 @@ services:
       - MONGODB_USERNAME
       - MONGODB_PASSWORD
       - MONGODB_DATABASE
+      - MONGODB_ROOT_PASSWORD=$MONGODB_PASSWORD
