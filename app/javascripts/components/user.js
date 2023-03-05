@@ -39,7 +39,7 @@ class UserModal extends React.Component {
     const currentUser = this.props.currentUser;
     const user = this.props.user;
     let hiveStats;
-    if (user.hive.id) {
+    if (user.hive) {
       hiveStats = [
         <tr key="stats"><td><strong>Hive Stats</strong></td><td></td></tr>,
         <tr key="elo">
@@ -86,7 +86,7 @@ class UserModal extends React.Component {
                 className={"flag flag-" + ((user.country === null) ? "eu" :
                   user.country.toLowerCase())}
                 alt={user.country} />&nbsp;
-							{user.username}
+              {user.username}
             </h4>
           </div>
           <div className="modal-body">
@@ -107,7 +107,7 @@ class UserModal extends React.Component {
                     <a href={enslUrl(user)}
                       className="btn btn-xs btn-primary"
                       target="_blank">ENSL Profile</a>&nbsp;
-										<a href={obsUrl({ user: user })}
+                    <a href={obsUrl({ user: user })}
                       className="btn btn-xs btn-primary"
                       target="_blank">Observatory Profile</a>
                   </td>
@@ -282,7 +282,7 @@ class ProfileModal extends React.Component {
                 <p className="add-top"><small>
                   Try to give an accurate representation of your skill to raise
                   the quality of your gathers
-								</small></p>
+                </small></p>
               </div>
               <hr />
               <div className="form-group">
@@ -290,12 +290,12 @@ class ProfileModal extends React.Component {
                 {abilitiesForm}
                 <p><small>
                   Specify which lifeforms you'd like to play in the gather
-								</small></p>
+                </small></p>
               </div>
               <hr />
               <p className="small">
                 You will need to rejoin the gather to see your updated profile
-							</p>
+              </p>
               <div className="form-group">
                 <button
                   type="submit"
@@ -320,7 +320,7 @@ class CurrentUser extends React.Component {
           <li>
             <a href="#" data-toggle="modal" data-target="#adminmodal">
               <i className="fa fa-magic fa-fw"></i> Administration
-						</a>
+            </a>
           </li>
         )
       }

@@ -144,10 +144,10 @@ class GatherPage extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = this.getInitialState();
+    this.state = this.getInitialState(props);
   }
 
-  getInitialState = () => {
+  getInitialState = (props) => {
     let updateTitle = true;
     let showEventsPanel = true;
 
@@ -175,7 +175,7 @@ class GatherPage extends React.Component {
       user: null,
       servers: [],
       archive: [],
-      socket: null,
+      socket: props.socket,
       events: [],
       updateTitle: updateTitle,
       showEventsPanel: showEventsPanel,
@@ -491,7 +491,7 @@ class GatherPage extends React.Component {
             <ul className="sidebar-menu">
               <li className="header">
                 <span className="badge">{this.state.users.length}</span> Players Online
-							</li>
+              </li>
             </ul>
             <UserMenu users={this.state.users} user={this.state.user}
               socket={socket} mountModal={this.mountModal} />

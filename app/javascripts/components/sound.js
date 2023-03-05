@@ -185,7 +185,6 @@ class MusicSelector extends React.Component {
         <label>Music</label>
         <select
           className="form-control"
-          defaultValue={this.state.music}
           onChange={this.setMusic}
           value={this.state.music}>
           {options}
@@ -246,14 +245,14 @@ class SoundPanel extends MenubarMixin(React.Component) {
       mutedButton = <li>
         <a href="#" onClick={this.unMute}>
           {mutedIcon}&nbsp;Muted
-				</a>
+        </a>
       </li>;
     } else {
       mutedIcon = <i className="fa fa-volume-up fa-fw"></i>;
       mutedButton = <li>
         <a href="#" onClick={this.mute}>
           {mutedIcon}&nbsp;Unmuted
-				</a>
+        </a>
       </li>;
     }
     return (
@@ -266,12 +265,12 @@ class SoundPanel extends MenubarMixin(React.Component) {
             <li>
               <a href='#' onClick={this.play}>
                 <i className="fa fa-play"></i>&nbsp;Play
-							</a>
+              </a>
             </li>
             <li>
               <a href='#' onClick={this.stop}>
                 <i className="fa fa-stop"></i>&nbsp;Stop
-							</a>
+              </a>
             </li>
             <hr />
             <li>
