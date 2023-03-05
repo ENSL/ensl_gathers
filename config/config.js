@@ -25,11 +25,15 @@ if (!test) {
 	}
 
 	if (process.env.GATHER_STEAM_ACCOUNT) {
-		baseConfig.steamBot.account_name = process.env.GATHER_STEAM_ACCOUNT;
+		baseConfig.steam.bot.account_name = process.env.GATHER_STEAM_ACCOUNT;
 	}
 
 	if (process.env.GATHER_STEAM_PASSWORD) {
-		baseConfig.steamBot.password = process.env.GATHER_STEAM_PASSWORD;
+		baseConfig.steam.bot.password = process.env.GATHER_STEAM_PASSWORD;
+	}
+
+	if (process.env.STEAM_API_KEY) {
+		baseConfig.steam.api_key = process.env.STEAM_API_KEY;
 	}
 
 	if (process.env.GATHER_DISCORD_HOOK_ID) {

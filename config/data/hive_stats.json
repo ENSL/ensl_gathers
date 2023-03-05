@@ -1,0 +1,129 @@
+{
+    "playerstats": {
+        "steamID": "12345678901234567",
+        "gameName": "",
+        "achievements": [],
+        "stats": [
+            {
+                "name": "skulk_challenge_1",
+                "value": 4
+            },
+            {
+                "name": "rounds_played",
+                "value": 44
+            },
+            {
+                "name": "halloween_18_rounds_played",
+                "value": 42
+            },
+            {
+                "name": "unearthed_release_rounds_played",
+                "value": 42
+            },
+            {
+                "name": "origin_release_rounds_played",
+                "value": 42
+            },
+            {
+                "name": "metro_release_rounds_played",
+                "value": 42
+            },
+            {
+                "name": "tanith_rounds_won",
+                "value": 42
+            },
+            {
+                "name": "td_total_time_player",
+                "value": 147699
+            },
+            {
+                "name": "td_total_time_commander",
+                "value": 13236
+            },
+            {
+                "name": "td_rounds_won_player",
+                "value": 90
+            },
+            {
+                "name": "td_rounds_won_commander",
+                "value": 5
+            },
+            {
+                "name": "skill",
+                "value": 4491
+            },
+            {
+                "name": "skill_offset",
+                "value": 156
+            },
+            {
+                "name": "comm_skill",
+                "value": 1338
+            },
+            {
+                "name": "comm_skill_offset",
+                "value": 65
+            },
+            {
+                "name": "adagrad",
+                "value": 2.19463610649108887
+            },
+            {
+                "name": "comm_adagrad",
+                "value": 0.0838916152715682983
+            },
+            {
+                "name": "td_skill",
+                "value": 4689
+            },
+            {
+                "name": "td_skill_offset",
+                "value": 94
+            },
+            {
+                "name": "td_comm_skill",
+                "value": 1016
+            },
+            {
+                "name": "td_comm_skill_offset",
+                "value": 118
+            },
+            {
+                "name": "td_adagrad",
+                "value": 2.04355740547180176
+            },
+            {
+                "name": "td_comm_adagrad",
+                "value": 0.0194523315876722336
+            },
+            {
+                "name": "xp",
+                "value": 9797637
+            },
+            {
+                "name": "level",
+                "value": 600
+            },
+            {
+                "name": "score",
+                "value": 1818653
+            },
+            {
+                "name": "skill_offset_sign",
+                "value": 1
+            },
+            {
+                "name": "comm_skill_offset_sign",
+                "value": 1
+            },
+            {
+                "name": "td_skill_offset_sign",
+                "value": 0
+            },
+            {
+                "name": "td_comm_skill_offset_sign",
+                "value": 1
+            }
+        ]
+    }
+}

@@ -3,15 +3,20 @@
 var config = {
 	port: 8000,
 	mongo: {
-		uri: "mongodb://localhost/swsgather_development"
+		uri: "mongodb://db/swsgather_development"
 	},
 	secret_token: "",
 	session_store_name: "_ENSL_session_key",
-	hive_url: "http://hive.naturalselection2.com",
-	hive2_url: "http://hive2.ns2cdt.com",
 	ensl_url: "http://www.ensl.org/",
 	ensl_rules_url: "http://www.ensl.org/articles/464",
-	steam_bot_link: "http://steamcommunity.com/id/nslgathers"
+	steam: {
+		bot: {
+			link: "http://steamcommunity.com/id/nslgathers",
+			account_name: '',
+			password: '',
+		},
+		api_key: '',
+	}
 };
 
 module.exports = config;

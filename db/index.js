@@ -5,6 +5,8 @@ var winston = require("winston");
 var mongoose = require("mongoose");
 var config = require(path.join(__dirname, "../config/config.js"));
 
+mongoose.set('strictQuery', true);
+
 var connect = function () {
   mongoose.connect(config.mongo.uri, {
     useNewUrlParser: true,
