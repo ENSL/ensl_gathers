@@ -1,8 +1,8 @@
 {
   "name": "sws_gathers",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "description": "ENSL Gather Service",
-  "main": "index.js",
+  "main": "index.mjs",
   "keywords": [
     "NS2",
     "Gathers",
@@ -10,25 +10,25 @@
   ],
   "scripts": {
     "test": "NODE_ENV=test mocha spec/",
-    "start": "npm run compile && node index.js",
-    "start_production": "npm run compile_production & node index.js",
+    "start": "npm run compile && node index.mjs",
+    "start_production": "npm run compile_production & node index.mjs",
     "watch": "npm run compile && node_modules/brunch/bin/brunch watch --server",
     "compile": "node node_modules/brunch/bin/brunch build",
     "compile_production": "node node_modules/brunch/bin/brunch build --production",
-    "dev": "nodemon index.js",
+    "dev": "nodemon index.mjs",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cblanc/sws_gathers"
+    "url": "https://github.com/ENSL/ensl_gathers"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cblanc/sws_gathers/issues"
+    "url": "https://github.com/ENSL/ensl_gathers/issues"
   },
-  "homepage": "https://github.com/cblanc/sws_gathers",
+  "homepage": "https://github.com/ENSL/ensl_gathers",
   "dependencies": {
     "async": "~1.4.0",
     "bootstrap": "^4.0.0",

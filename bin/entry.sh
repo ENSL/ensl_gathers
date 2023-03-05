@@ -6,4 +6,4 @@ if [ -f "/home/web/tmp/.updatePublic" ]; then
   rm -f /home/web/tmp/.updatePublic
 fi
 
-node index.js
+node index.mjs
