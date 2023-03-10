@@ -27,24 +27,19 @@ class InfoButton extends React.Component {
       dropdown = (
         <ul className="treeview-menu menu-open" style={{ display: "block" }}>
           <li>
-            <a href="https://github.com/cblanc/sws_gathers" target="_blank">
+            <a href="https://github.com/ENSL/ensl_gathers" target="_blank">
               <i className="fa fa-github">&nbsp;</i>&nbsp;Github
-						</a>
-          </li>
-          <li>
-            <a href="http://steamcommunity.com/id/nslgathers" target="_blank">
-              <i className="fa fa-steam-square">&nbsp;</i>&nbsp;Steam Bot
-						</a>
+            </a>
           </li>
           <li>
             <a href="https://www.ensl.org/gatherre" target="_blank">
               <i className="fa fa-legal">&nbsp;</i>&nbsp;Gather Rules
-						</a>
+            </a>
           </li>
           <li>
             <a href="/messages" target="_blank">
               <i className="fa fa-comments">&nbsp;</i>&nbsp;Message Archive
-						</a>
+            </a>
           </li>
         </ul>
       );

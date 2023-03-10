@@ -24,4 +24,4 @@ RUN /bin/cp -r ./public /home/web/tmp/public && \
 
 EXPOSE 8000
 
-CMD ["node", "index.js"]
+CMD ["node", "index.mjs"]

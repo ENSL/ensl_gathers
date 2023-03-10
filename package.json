@@ -1,8 +1,8 @@
 {
   "name": "sws_gathers",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "description": "ENSL Gather Service",
-  "main": "index.js",
+  "main": "index.mjs",
   "keywords": [
     "NS2",
     "Gathers",
@@ -10,28 +10,29 @@
   ],
   "scripts": {
     "test": "NODE_ENV=test mocha spec/",
-    "start": "npm run compile && node index.js",
-    "start_production": "npm run compile_production & node index.js",
+    "start": "npm run compile && node index.mjs",
+    "start_production": "npm run compile_production & node index.mjs",
     "watch": "npm run compile && node_modules/brunch/bin/brunch watch --server",
     "compile": "node node_modules/brunch/bin/brunch build",
     "compile_production": "node node_modules/brunch/bin/brunch build --production",
-    "dev": "nodemon index.js",
-    "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "dev": "nodemon index.mjs",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cblanc/sws_gathers"
+    "url": "https://github.com/ENSL/ensl_gathers"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cblanc/sws_gathers/issues"
+    "url": "https://github.com/ENSL/ensl_gathers/issues"
   },
-  "homepage": "https://github.com/cblanc/sws_gathers",
+  "homepage": "https://github.com/ENSL/ensl_gathers",
   "dependencies": {
+    "@snyk/protect": "^1.1111.0",
     "async": "~1.4.0",
-    "bootstrap": "~4.0.0",
+    "bootstrap": "^4.0.0",
     "bootstrap-solarized": "~1.0.2",
     "brunch": "~3.0.0",
     "clean-css-brunch": ">=3.0.0",
@@ -39,8 +40,8 @@
     "cors": "~2.7.1",
     "css-brunch": ">= 1.0 < 1.8",
     "discord.js": "^11.1.0",
-    "express": "~4.16.0",
-    "express-handlebars": "~3.0.0",
+    "express": "^4.16.0",
+    "express-handlebars": "^7.0.1",
     "extend": "~3.0.0",
     "howler": "~1.1.28",
     "javascript-brunch": ">= 1.0 < 1.8",
@@ -48,21 +49,18 @@
     "jquery": "~3.5.0",
     "lodash": "~4.17.20",
     "marshal": "^0.5.2",
-    "moment": "~2.11.2",
-    "mongoose": "~5.7.5",
+    "moment": "^2.11.2",
+    "mongoose": "^6.10.1",
     "morgan": "~1.9.1",
-    "newrelic": "~5.13.1",
     "perfect-scrollbar": "~0.6.10",
     "react": "^16.13.1",
-    "react-autolink": "~0.2.1",
-    "react-dom": "~16.0.1",
-    "react-emoji": "~0.4.1",
+    "react-autolink": "^0.2.1",
+    "react-dom": "^16.0.1",
+    "react-emoji": "^0.4.1",
     "request": "~2.88.0",
     "serve-favicon": "~2.4.5",
-    "snyk": "^1.316.1",
-    "socket.io": "~2.1.1",
-    "socket.io-client": "~2.1.1",
-    "steam": "1.4.0",
+    "socket.io": "^4.6.1",
+    "socket.io-client": "^4.6.1",
     "steamidconvert": "~0.2.4",
     "toastr": "~2.1.4",
     "winston": "~1.0.1"
@@ -82,13 +80,13 @@
     "@types/winston": "^2.4.4",
     "babel-brunch": "^7.0.1",
     "chai": "~3.1.0",
-    "mocha": "~2.2.5",
-    "nodemon": "~1.4.0",
-    "supertest": "~1.0.1",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.21",
+    "supertest": "^6.3.3",
     "terser-brunch": "^4.0.0"
   },
   "engines": {
-    "node": "^10.13.0"
+    "node": ">=10.13.0"
   },
   "snyk": true
 }

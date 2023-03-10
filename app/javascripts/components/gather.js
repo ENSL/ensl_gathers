@@ -36,7 +36,7 @@ class SelectPlayerButton extends React.Component {
         onClick={this.selectPlayer}
         value={this.props.gatherer.id}
         className="btn btn-xs btn-primary team-label"> Select
-				</button>;
+      </button>;
     }
     return button;
   }
@@ -87,7 +87,7 @@ class GatherTeams extends React.Component {
           <div className="panel panel-primary panel-light-background team-marines">
             <div className="panel-heading">
               Marines
-						</div>
+            </div>
             <GathererList gather={this.props.gather} team="marine" />
           </div>
         </div>
@@ -95,7 +95,7 @@ class GatherTeams extends React.Component {
           <div className="panel panel-primary panel-light-background team-aliens">
             <div className="panel-heading">
               Aliens
-						</div>
+            </div>
             <GathererList gather={this.props.gather} team="alien" />
           </div>
         </div>
@@ -317,7 +317,7 @@ class CooloffButton extends React.Component {
       disabled="true"
       className="btn btn-success">
       Leaver Cooloff ({this.timeRemaining()})
-		</button>
+    </button>
   }
 }
 
@@ -371,15 +371,15 @@ class GatherActions extends React.Component {
         {gather.pickingPattern.map((team, index) => {
           if (team === 'alien') {
             if (index <= pickIndex) {
-              return <li className="padding-y-1"><div className="pick-pattern-box alien-box-active"></div></li>
+              return <li key={index} className="padding-y-1"><div className="pick-pattern-box alien-box-active"></div></li>
             } else {
-              return <li className="padding-y-1"><div className="pick-pattern-box alien-box"></div></li>
+              return <li key={index} className="padding-y-1"><div className="pick-pattern-box alien-box"></div></li>
             }
           } else {
             if (index <= pickIndex) {
-              return <li className="padding-y-1"><div className="pick-pattern-box marine-box-active"></div></li>
+              return <li key={index} className="padding-y-1"><div className="pick-pattern-box marine-box-active"></div></li>
             } else {
-              return <li className="padding-y-1"><div className="pick-pattern-box marine-box"></div></li>
+              return <li key={index} className="padding-y-1"><div className="pick-pattern-box marine-box"></div></li>
             }
           }
         })}
@@ -390,15 +390,15 @@ class GatherActions extends React.Component {
       <div>
         <div className="text-right">
           <ul className="list-inline no-bottom content-center">
-            <li>
+            <li key="picking">
               {pickPatternIndicator}
             </li>
             <ul className='list-inline no-bottom'>
-              <li className='padding-right-0'>
+              <li key="join" className='padding-right-0'>
                 <JoinGatherButton gather={gather} thisGatherer={thisGatherer}
                   user={user} socket={socket} />
               </li>
-              <li className='padding-right-0'>
+              <li key="regather" className='padding-right-0'>
                 {regatherButton}
               </li>
             </ul>
@@ -909,8 +909,8 @@ class GathererListItem extends React.Component {
             value={gatherer.user.id}
             onClick={this.bootGatherer}>
             Boot from Gather
-					</button>&nbsp;
-					<AssumeUserIdButton socket={socket}
+          </button>&nbsp;
+          <AssumeUserIdButton socket={socket}
             gatherer={gatherer} currentUser={user} />
         </dd>
       ]
@@ -977,7 +977,7 @@ class GathererListItem extends React.Component {
                 <a href={enslUrl(gatherer)}
                   className="btn btn-xs btn-primary"
                   target="_blank">ENSL Profile</a>&nbsp;
-								<a href={obsUrl(gatherer)}
+                <a href={obsUrl(gatherer)}
                   className="btn btn-xs btn-primary"
                   target="_blank">Observatory Profile</a>
               </dd>
@@ -1145,7 +1145,7 @@ class GatherVotingResults extends React.Component {
       <div className="panel panel-primary">
         <div className="panel-heading">
           Game Information
-				</div>
+        </div>
         <div className="panel-body">
           <div className="row">
             <div className="col-md-4">
