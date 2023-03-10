@@ -19,6 +19,9 @@ RUN /bin/mkdir -p /home/web/tmp/public
 COPY --chown=web:web --from=builder /app /app
 WORKDIR /app
 
+RUN /bin/cp -r ./public /home/web/tmp/public && \
+  /bin/touch /home/web/tmp/.updatePublic
+
 EXPOSE 8000
 
 CMD ["node", "index.mjs"]
