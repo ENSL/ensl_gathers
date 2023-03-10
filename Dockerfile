@@ -19,4 +19,6 @@ RUN /bin/mkdir -p /home/web/tmp/public
 COPY --chown=web:web --from=builder /app /app
 WORKDIR /app
 
+EXPOSE 8000
+
 CMD ["node", "index.mjs"]
