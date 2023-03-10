@@ -86,7 +86,7 @@
     "terser-brunch": "^4.0.0"
   },
   "engines": {
-    "node": ">=10.13.0"
+    "node": ">=18.14.2"
   },
   "snyk": true
 }
